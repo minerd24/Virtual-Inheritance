@@ -6,11 +6,11 @@ void Vehicle::setValues(string a, int b)
 	manufacturer = a;
 	year = b;
 }
-string Vehicle::getManu()
+string Vehicle::getManu() const
 {
 	return manufacturer;
 }
-int Vehicle::getYear()
+int Vehicle::getYear() const
 {
 	return year;
 }

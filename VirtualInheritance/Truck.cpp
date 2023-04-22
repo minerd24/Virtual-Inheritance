@@ -3,7 +3,7 @@ void Truck::setCap(int d)
 {
 	towCap = d;
 }
-int Truck::getCap()
+int Truck::getCap() const
 {
 	return towCap;
 }

@@ -4,7 +4,7 @@ void Car::setDoor(int d)
 {
 	doorCount = d;
 }
-int Car::getDoor()
+int Car::getDoor() const
 {
 	return doorCount;
 }

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VEHICLE_H
+#define VEHICLE_H
 #include <iostream>
 #include <string>
 
@@ -6,7 +7,7 @@ using namespace std;
 
 class Vehicle
 {
-private:
+protected:
 	string manufacturer;
 	int year;
 public:
@@ -16,7 +17,8 @@ public:
 		year = 0;
 	}
 	void setValues(string, int);
-	string getManu();
-	int getYear();
+	virtual string getManu() const;
+	virtual int getYear() const;
 	void displayInfo();
 };
+#endif

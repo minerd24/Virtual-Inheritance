@@ -35,5 +35,8 @@
     <ClInclude Include="Truck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vehicles Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
