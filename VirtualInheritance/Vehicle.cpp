@@ -1,14 +1,21 @@
 #include "Vehicle.h"
 
 using namespace std;
-
-int main()
+void Vehicle::setValues(string a, int b)
 {
-	Vehicle b;
-	b.displayInfo();
-	cout << "Now changing values!\n";
-	string sHolder = "The Cheese Men";
-	int iHoldr = 1924;
-	b.setValues(sHolder, iHoldr);
-	b.displayInfo();
+	manufacturer = a;
+	year = b;
+}
+string Vehicle::getManu()
+{
+	return manufacturer;
+}
+int Vehicle::getYear()
+{
+	return year;
+}
+void Vehicle::displayInfo()
+{
+	cout << "Manufacturer: " << manufacturer << endl;
+	cout << "Year: " << year << endl;
 }

@@ -15,22 +15,8 @@ public:
 		manufacturer = "";
 		year = 0;
 	}
-	void setValues(string a, int b)
-	{
-		manufacturer = a;
-		year = b;
-	}
-	string getManu()
-	{
-		return manufacturer;
-	}
-	int getYear()
-	{
-		return year;
-	}
-	void displayInfo()
-	{
-		cout << "Manufacturer: " << manufacturer << endl;
-		cout << "Year: " << year << endl;
-	}
+	void setValues(string, int);
+	string getManu();
+	int getYear();
+	void displayInfo();
 };
